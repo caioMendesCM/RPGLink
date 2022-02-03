@@ -1,1 +1,1 @@
-- Projeto pessoal - APP android para facilitação da criação e jogatina de uma partida de RPG. Ainda em desenvolvimento, temporariamente em pausa.
+- Projeto pessoal - APP android para facilitação da criação e desenvolvimento partidas de RPG de mesa. Ainda em desenvolvimento, temporariamente em pausa.
