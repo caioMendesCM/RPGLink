@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHomeBtn"
+        android:icon="@drawable/home_icon_selector"
+        android:enabled="true"
+        android:title="Home" />
+    <item
+        android:id="@+id/navOfflineBtn"
+        android:icon="@drawable/ic_jogo_offline"
+        android:enabled="true"
+        android:title="Offline" />
+    <item
+        android:id="@+id/navSearchBtn"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"
+        android:title="Procurar" />
+    <item
+        android:id="@+id/navCampanhasBtn"
+        android:icon="@drawable/ic_suas_campanhas"
+        android:enabled="true"
+        android:title="Campanhas" />
+    <item
+        android:id="@+id/navPerfilBtn"
+        android:icon="@drawable/ic_perfil"
+        android:enabled="true"
+        android:title="Perfil" />
+
+</menu>

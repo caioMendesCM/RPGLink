@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+
+    <ImageView
+        android:id="@+id/funtoVw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/shape" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/loginRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/ic_rectangle_7" />
+
+    <ImageView
+        android:id="@+id/loginIcon"
+        android:layout_width="19dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRectangle"
+        app:layout_constraintStart_toStartOf="@+id/loginRectangle"
+        app:layout_constraintTop_toTopOf="@+id/loginRectangle"
+        app:srcCompat="@drawable/ic_nome_de_usuario" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LoginInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00FFFFFF"
+        android:hint=" "
+        android:textColor="#706F6F"
+        android:textColorHint="#706F6F"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/loginRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/loginRectangle"
+        app:layout_constraintStart_toEndOf="@+id/loginIcon"
+        app:layout_constraintTop_toTopOf="@+id/loginRectangle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LoginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawingCacheQuality="high"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Email"
+            android:inputType="text|textEmailAddress"
+            android:selectAllOnFocus="false"
+            android:textColor="#706F6F"
+            android:textColorHint="#706F6F"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/passwordRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/entrarBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginRectangle"
+        app:layout_constraintVertical_bias="0.237"
+        app:srcCompat="@drawable/ic_rectangle_7" />
+
+    <ImageView
+        android:id="@+id/senhaIcon"
+        android:layout_width="19dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordRectangle"
+        app:layout_constraintStart_toStartOf="@+id/passwordRectangle"
+        app:layout_constraintTop_toTopOf="@+id/passwordRectangle"
+        app:srcCompat="@drawable/ic_senha" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint=" "
+        android:textColorHint="#706F6F"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordRectangle"
+        app:layout_constraintEnd_toEndOf="@+id/passwordRectangle"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toEndOf="@+id/senhaIcon"
+        app:layout_constraintTop_toTopOf="@+id/passwordRectangle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:textColor="#706F6F"
+            android:textColorHint="#706F6F"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/entrarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineM"
+        app:layout_constraintStart_toStartOf="@+id/passwordRectangle"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRectangle"
+        android:background="@drawable/ic_rectangle_2"
+        android:text="Entrar"
+        android:textColor="@color/app_black"
+        android:fontFamily="@font/ubuntu"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="Esqueci minha senha."
+        android:textColor="#706F6F"
+        android:textColorHint="#706F6F"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/entrarBtn"
+        app:layout_constraintStart_toEndOf="@+id/entrarBtn"
+        app:layout_constraintTop_toTopOf="@+id/entrarBtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/cadastroBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="abrirTelaCadastro"
+        android:text="CADASTRE-SE"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/app_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/googleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineM"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:background="@drawable/ic_rectangle_7"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/googleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_rectangle_7"
+        android:onClick="googleLogin"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:elevation="0dp"
+        android:textColor="@color/app_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/facebookBtn"
+        app:layout_constraintEnd_toEndOf="@+id/cadastroBtn"
+        app:layout_constraintStart_toStartOf="@+id/cadastroBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cadastroBtn"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/googleLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="false"
+        android:drawableStart="@drawable/ic_google"
+        android:drawablePadding="8dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="LOGIN COM GOOGLE"
+        android:textColor="@color/app_black"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/googleBtn"
+        app:layout_constraintEnd_toEndOf="@+id/googleBtn"
+        app:layout_constraintStart_toStartOf="@+id/googleBtn"
+        app:layout_constraintTop_toTopOf="@+id/googleBtn" />
+
+    <Button
+        android:id="@+id/facebookBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rectangle_7"
+        android:onClick="facebookLogin"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:textColor="@color/app_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/funtoVw"
+        app:layout_constraintEnd_toEndOf="@+id/googleBtn"
+        app:layout_constraintStart_toStartOf="@+id/googleBtn"
+        app:layout_constraintTop_toBottomOf="@+id/googleBtn" />
+
+    <TextView
+        android:id="@+id/facebookLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        android:clickable="false"
+        android:drawableStart="@drawable/ic_facebook"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="LOGIN COM FACEBOOK"
+        android:textColor="@color/app_black"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/facebookBtn"
+        app:layout_constraintEnd_toEndOf="@+id/facebookBtn"
+        app:layout_constraintStart_toStartOf="@+id/facebookBtn"
+        app:layout_constraintTop_toTopOf="@+id/facebookBtn" />
+
+    <TextView
+        android:id="@+id/termosLoginTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:text="@string/termos_login"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/funtoVw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RPG Link</string>
+    <string name="bem_vindo_">BEM-VINDO!</string>
+    <string name="este_o">ESTE É O</string>
+    <string name="pular">Pular</string>
+    <string name="termos_login">Ao confirmar o seu login o usuário automáticamente\nconcorda com os termos de uso do aplicativo</string>
+    <string name="termos_cadastro">Ao confirmar o seu cadastro o usuário automáticamente\nconcorda com os termos de uso do aplicativo</string>
+    <string name="o_que_">O QUE É</string>
+    <string name="rpg_link_">RPG LINK?</string>
+    <string name="tudo_que_vo">Tudo que você precisa para\njogar um rpg de mesa!</string>
+    <string name="criado_para">CRIADO PARA FACILITAR\nUMA PARTIDA DE RPG\nO RPG LINK:</string>
+    <string name="escolha_um_">Escolha um sistema de jogo e chame seus amigos\npara se juntar a você em uma campanha épica!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">639268833751469</string>
+    <string name="fb_login_protocol_scheme">fb639268833751469</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>

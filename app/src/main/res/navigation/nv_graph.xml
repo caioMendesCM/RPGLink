@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nv_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.rpglink.Fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_slideBaseFragment"
+            app:destination="@id/slideBaseFragment"
+            app:enterAnim="@anim/slide_in_teste"
+            app:exitAnim="@anim/slide_out_teste"/>
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeLoginFragment"
+            app:destination="@id/homeLoginFragment"
+            app:enterAnim="@anim/slide_in_teste"
+            app:exitAnim="@anim/slide_out_teste"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/slideBaseFragment"
+        android:name="com.example.rpglink.Fragments.SlideBaseFragment"
+        android:label="fragment_slide_base"
+        tools:layout="@layout/slide_1">
+        <action
+            android:id="@+id/action_slideBaseFragment_to_homeLoginFragment"
+            app:destination="@id/homeLoginFragment"
+            app:enterAnim="@anim/slide_in_teste"
+            app:exitAnim="@anim/slide_out_teste"/>
+        <action
+            android:id="@+id/action_slideBaseFragment_to_cadastroFragment"
+            app:destination="@id/cadastroFragment"
+            app:enterAnim="@anim/slide_in_teste"
+            app:exitAnim="@anim/slide_out_teste"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeLoginFragment"
+        android:name="com.example.rpglink.Fragments.HomeLoginFragment"
+        android:label="HomeLoginFragment"
+        tools:layout="@layout/activity_home_l">
+        <action
+            android:id="@+id/action_homeLoginFragment_to_menuHamburguerFragment"
+            app:destination="@id/menuHamburguerFragment"
+            app:enterAnim="@anim/mi_fade_in" />
+        <action
+            android:id="@+id/action_homeLoginFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_teste"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="com.example.rpglink.Fragments.CadastroFragment"
+        android:label="CadastroFragment"
+        tools:layout="@layout/activity_cadastro">
+        <action
+            android:id="@+id/action_cadastroFragment_to_homeCadastroFragment"
+            app:destination="@id/homeCadastroFragment"
+            app:enterAnim="@anim/slide_in_teste"
+            app:exitAnim="@anim/slide_out_teste"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeCadastroFragment"
+        android:name="com.example.rpglink.Fragments.HomeCadastroFragment"
+        android:label="fragment_home_cadastro"
+        tools:layout="@layout/activity_home_c">
+        <action
+            android:id="@+id/action_homeCadastroFragment_to_menuHamburguerFragment"
+            app:destination="@id/menuHamburguerFragment"
+            app:enterAnim="@anim/mi_fade_in" />
+        <action
+            android:id="@+id/action_homeCadastroFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_teste"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/menuHamburguerFragment"
+        android:name="com.example.rpglink.Fragments.MenuHamburguerFragment"
+        android:label="MenuHamburguerFragment"
+        tools:layout="@layout/fragment_menu_hamburguer">
+        <action
+            android:id="@+id/action_menuHamburguerFragment_to_homeCadastroFragment"
+            app:destination="@id/homeCadastroFragment"
+            app:exitAnim="@anim/mi_fade_out" />
+        <action
+            android:id="@+id/action_menuHamburguerFragment_to_homeLoginFragment"
+            app:destination="@id/homeLoginFragment"
+            app:exitAnim="@anim/mi_fade_out" />
+        <action
+        android:id="@+id/action_menuHamburguerFragment_to_notificationsOptionsFragment"
+        app:destination="@id/NotificationsOptionsFragment"
+        app:exitAnim="@anim/mi_fade_out" />
+        <action
+            android:id="@+id/action_menuHamburguerFragment_to_securityOptionsFragment"
+            app:destination="@id/securityOptionsFragment"
+            app:exitAnim="@anim/mi_fade_out"/>
+        <action
+            android:id="@+id/action_menuHamburguerFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:exitAnim="@anim/mi_fade_out"/>
+    </dialog>
+
+    <fragment
+        android:id="@+id/NotificationsOptionsFragment"
+        android:name="com.example.rpglink.Fragments.NotificationsOptionsFragment"
+        android:label="NotificationsOptionsFragment"
+        tools:layout="@layout/fragment_notifications_options">
+    </fragment>
+
+    <fragment
+        android:id="@+id/securityOptionsFragment"
+        android:name="com.example.rpglink.Fragments.SecurityOptionsFragment"
+        android:label="SecurityOptionsFragment"
+        tools:layout="@layout/fragment_security_options"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.rpglink.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_FriendsListFragment"
+            app:destination="@id/FriendsListFragment"
+            app:enterAnim="@anim/mi_fade_in"/>
+    </fragment>
+
+    <dialog
+        android:id="@+id/FriendsListFragment"
+        android:name="com.example.rpglink.Fragments.FriendsListFragment"
+        android:label="FriendsListFragmente"
+        tools:layout="@layout/fragment_friends_list">
+
+
+    </dialog>
+
+</navigation>

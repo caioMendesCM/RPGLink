@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491612016481",
+    "project_id": "rpg-link-6773f",
+    "storage_bucket": "rpg-link-6773f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491612016481:android:9b01f87db874d5ff3d3f20",
+        "android_client_info": {
+          "package_name": "com.example.rpglink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491612016481-8rem5ujnmtj3lq0p2jhka6208q6i2v4q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rpglink",
+            "certificate_hash": "81502522851fd9f4a5034e49b7aee4cbf7a330d5"
+          }
+        },
+        {
+          "client_id": "491612016481-92fi8b0s3ddb3foop2kpstc0bg9nsm8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASUSSIAFtCgOUYbnC8PTtn4pXl4d63qzE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491612016481-92fi8b0s3ddb3foop2kpstc0bg9nsm8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

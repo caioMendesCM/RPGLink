@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="331dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:elevation="8dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bg_card_camp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    android:id="@+id/rpgIdentifierImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/friends_campain_cover">
+
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/rpgNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="16dp"
+                    android:foregroundGravity="right"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/campPlayersTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_camp_players"
+                    android:drawableEnd="@drawable/ic_person"
+                    android:drawableRight="@drawable/ic_person"
+                    android:drawablePadding="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="1dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="1dp"
+                    android:text="4"
+                    android:textColor="#353535" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/nomeCampanhaTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_nome_campanha"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/nomeMestreCampanhaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="12dp"
+                android:drawableStart="@drawable/ic_mini_pic"
+                android:drawableLeft="@drawable/ic_mini_pic"
+                android:drawablePadding="14dp"
+                android:gravity="left|center_vertical"
+                android:lines="2"
+                android:paddingRight="14dp"
+                android:paddingBottom="6dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/nomeAmigoCampanhaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="40dp"
+                android:drawableStart="@drawable/ic_mini_pic"
+                android:drawableLeft="@drawable/ic_mini_pic"
+                android:drawablePadding="14dp"
+                android:gravity="left|center_vertical"
+                android:lines="2"
+                android:paddingRight="14dp"
+                android:paddingBottom="6dp"
+                android:text="TextView"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/regras_btn"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="Regras"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

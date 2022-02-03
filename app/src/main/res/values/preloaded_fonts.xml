@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/assistant_semibold</item>
+        <item>@font/exo</item>
+        <item>@font/exo_2_bold</item>
+        <item>@font/exo_2_semibold</item>
+        <item>@font/exo_bold</item>
+        <item>@font/exo_teste</item>
+        <item>@font/ubuntu</item>
+    </array>
+</resources>

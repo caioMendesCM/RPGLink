@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="331dp"
+    android:layout_height="373dp"
+    android:elevation="8dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/bg_card_camp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/rpgIdentifierImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                app:srcCompat="@drawable/friends_campain_cover">
+
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/rpgNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="14dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/assistant_bold"
+                android:foregroundGravity="right"
+                android:text="TextView"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/campPlayersTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/assistant_semibold"
+                android:background="@drawable/bg_camp_players"
+                android:drawableEnd="@drawable/ic_person"
+                android:drawableRight="@drawable/ic_person"
+                android:drawablePadding="4dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="1dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="1dp"
+                android:text="4"
+                android:textColor="#353535" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/nomeCampanhaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="14dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_nome_campanha"
+            android:fontFamily="@font/assistant_semibold"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/characterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/PersonagemTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/assistant_bold"
+                android:gravity="left|center_vertical"
+                android:text="Personagem:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Julin Madeira"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/NivelTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/assistant_semibold"
+                android:text="Nível:"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nivelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/assistant_bold"
+                android:gravity="right|center_vertical"
+                android:text="000"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/characterStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pvStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/charace_stat_bg"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="PV: 000"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/higherStat_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/charace_stat_bg"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="EX: 000"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/higherStat_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/charace_stat_bg"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="EX: 000"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/higherStat_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/charace_stat_bg"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="EX: 000"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/regras_btn"
+            android:elevation="8dp"
+            android:fontFamily="@font/assistant_semibold"
+            android:gravity="center"
+            android:text="Continuar"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</FrameLayout>

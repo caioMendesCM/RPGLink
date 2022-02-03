@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="331dp"
+    android:layout_height="305dp"
+    android:gravity="center"
+    android:elevation="8dp"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_card_camp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--  barra superior -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/player_car_top_bar"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FICHA DO JOGADOR"
+                android:textSize="18sp"
+                android:fontFamily="@font/assistant_bold"
+                android:textColor="@color/app_black"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Número de campanhas jogadas"
+                android:textColor="@color/app_grey"
+
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/campaignNumberTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="000"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Quantidade de mortes"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/deathNumberTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="000"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Tesouro Coletado"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/collectedTreasureTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="000"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Criaturas destruidas"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/creaturesDestroyedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="000"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Vidas Salvas"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/livesSavedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="000"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="start"
+                android:text="Tendência mais comum"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/usualAlignmentsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/assistant_semibold"
+                android:gravity="end"
+                android:text="Caótico e Neutro"
+                android:textColor="@color/app_grey"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        
+        
+
+        
+        
+
+        
+
+        
+
+        
+
+    </LinearLayout>
+
+</FrameLayout>
